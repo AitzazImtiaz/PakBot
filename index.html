@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Neural network chatbot</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/chatbot.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+	    <link rel="stylesheet" href="css/font-awesome.min.css">
+	    <link rel="stylesheet" href="css/main.css">
+	    <link rel="stylesheet" href="css/animate.css">
+	    <link rel="stylesheet" href="css/responsive.css">
+	    <link rel="stylesheet" href="css/academicons.min.css"/>
+	</head>
+	<body>
+		<header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-xs-6 col-sm-3">
+            <a target="_blank" href="https://github.com/AitzazImtiaz" class="logo">
+        Aitzaz Imtiaz
+            </a>
+          </div>
+          <div class="col-md-6 col-xs-6 col-sm-6">
+            <div class="menu">
+              <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                  </div>
+
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                      <li><a target="_blank" href="https://arxiv.org/abs/2004.12752">Paper describing chatbots</a></li>
+                      <li><a target="_blank" href="https://github.com/ricsinaruto/gutenberg-dialog">Github repository</a></li>
+                    </ul>
+                    
+                  </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+              </nav>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-12 col-sm-3">
+            <ul class="social-info">
+              <li><a href="mailto:aitzazimtiaz855@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
+              <li><a href="https://twitter.com/AitzazImtiaz" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://github.com/AitzazImtiaz" target="_blank"><i class="fa fa-github"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="banner" class="wow fadeInUp">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7 col-md-offset-2 col-sm-7">
+				<div class="block">
+			<h1 class="title">PakBot, Not Useless</h1>
+			<div class="chat"></div>
+			<div class="busy"></div>
+			<div class="input">
+				<input type="text" id="text_input" placeholder="Chat with Pak!" />
+				<a id="btn">Tell!</a>
+			</div>
+			<div class="lang">
+				<select name="langs" id="langs">
+				  <option value="en">English</option>
+				  <option value="de">German</option>
+				  <option value="nl">Dutch</option>
+				  <option value="es">Spanish</option>
+				  <option value="it">Italian</option>
+				  <!-- <option value="hu">Hungarian</option>-->
+				  <!--<option value="pt">Portuguese</option>-->
+				</select>
+			</div>
+			<div class="model">
+				<select name="models" id="models">
+					<option value="gutenberg">Gutenberg</option>
+				  <option value="opensubtitles">Opensubtitles</option>
+				  <option value="pc_base">PersonaChat</option>
+				  <option value="dd_base">DailyDialog</option>
+				  <option value="pc_gut">Gutenberg + PersonaChat</option>
+				  <option value="dd_gut">Gutenberg + DailyDialog</option>
+				  <option value="pc_open">Opensubtitles + PersonaChat</option>
+				  <option value="dd_open">Opensubtitles + DailyDialog</option>
+				</select>
+			</div>
+			<div class="history">
+				<select name="history" id="history">
+					<option value=1>History size = 1</option>
+				  <option value=3 selected="selected">History size = 3</option>
+				  <option value=5>History size = 5</option>
+				  <option value=7>History size = 7</option>
+				</select>
+			</div>
+		</div>
+			</div>	
+		</div>
+		</div>
+	</section>
+		<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" src="js/chatbot.js"></script>
+	</body>
+</html>
