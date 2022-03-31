@@ -110,6 +110,6 @@ $(function() {
 	
 	// initial chat state
 	updateChat(robot, 'Hi there, I am PakBot, to begin just type and see settings below. Do anything you like here! Talk with me or freak. I am made by my father Aitzaz Imtiaz!');
-	updateChat(robot, 'I keenly support Palestine, Ukraine, Kashmir and other victims. But I support peaceful talks and UN, btw I am and my father like USA! Now talk with me -_-');
+	updateChat(robot, 'I keenly support Palestine, Ukraine, Kashmir and other victims. But I support peaceful talks and UN, btw I and my father like USA! Now talk with me. -_-');
 
 });
